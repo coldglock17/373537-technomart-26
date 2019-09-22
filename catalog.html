@@ -10,7 +10,10 @@
 			<img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарт">
 		</a>
 		<p>
-			Поиск:
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<label for="search-field">Поиск:</label>
+				<input type="search" name="search" id="search-field">
+			</form>
 		</p>
 		<a href="#">
 			Закладки: 0
@@ -23,16 +26,19 @@
 		</a>
 
 		<article>
-			<h1>Техномарт</h1>
+			<h1 class="visually-hidden">Техномарт</h1>
 			<p>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
-			<h2>Связаться с нами</h2>
+			<h2 class="visually-hidden">Связаться с нами</h2>
 			<p>+7 (812) 555-05-55</p>
 			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 		</article>
 
 		<section>
+			<h2 class="visually-hidden">Личный кабинет</h2>
 			<a href="#">Равшан Джамшутович</a>
-			<button type="button">Выйти</button>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<input type="image" src="img/icon-logout.svg" alt="Выйти">
+			</form>
 			<ul>
 				<li>
 					<a href="#">Мои заказы</a>
@@ -59,6 +65,7 @@
 
 	<main>
 		<ul>
+			<li><a href="index.html" class="visually-hidden">Главная</a></li>
 			<li><a href="catalog.html">Каталог</a></li>
 			<li><a href="#">Инструмент</a></li>
 			<li><a>Перфораторы</a></li>
@@ -82,27 +89,56 @@
 				<li>По типу</li>
 				<li>По функционалу</li>
 			</ul>
-		</section>
-
-		<!-- В будущем форма с чекбоксами -->
-		<section>
-			<h3>Производители</h3>
-			<ul>
-				<li>Bosch</li>
-				<li>Интерскол</li>
-				<li>Makita</li>
-				<li>Dewalt</li>
-				<li>Hitachi</li>
-			</ul>
-			<h3>Питание</h3>
-			<ul>
-				<li>Аккумуляторные</li>
-				<li>Сетевые</li>
-			</ul>
+			<button type="button" class="visually-hidden">По возрастанию</button>
+			<button type="button" class="visually-hidden">По убыванию</button>
 		</section>
 
 		<section>
-			<h2>Список перфораторов</h2>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<fieldset>
+					<legend><h3>Производители</h3></legend>
+					<ul>
+						<li>
+							<input type="checkbox" name="bosch" id="bosch-field" checked>
+							<label for="bosch-field">Bosch</label>
+						</li>
+						<li>
+							<input type="checkbox" name="interscol" id="interscol-field">
+							<label for="interscol-field">Интерскол</label>
+						</li>
+						<li>
+							<input type="checkbox" name="makita" id="makita-field" checked>
+							<label for="makita-field">Makita</label>
+						</li>
+						<li>
+							<input type="checkbox" name="dewalt" id="dewalt-field">
+							<label for="dewalt-field">Dewalt</label>
+						</li>
+						<li>
+							<input type="checkbox" name="hitachi" id="hitachi-field">
+							<label for="hitachi-field">Hitachi</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend><h3>Питание</h3></legend>
+					<ul>
+						<li>
+							<input type="radio" name="power" value="battery" id="battery-field">
+							<label for="battery-field">Аккумуляторные</label>
+						</li>
+						<li>
+							<input type="radio" name="power" value="network" id="network-field">
+							<label for="network-field">Сетевые</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit">Показать</button>
+			</form>
+		</section>
+
+		<section>
+			<h2 class="visually-hidden">Список перфораторов</h2>
 			<ul>
 				<li>
 					<h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
@@ -119,7 +155,7 @@
 				<li>
 					<h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
 					<a href="#">12500 Р.</a>
-					<a href="#">Купить</a>
+					<button type="button">Купить</button>
 					<button type="button">В закладки</button>
 				</li>
 				<li>
@@ -157,6 +193,11 @@
 					<a href="#">12500 Р.</a>
 				</li>
 			</ul>
+			<div>
+				<p>Товар добавлен в корзину</p>
+				<a href="#">Оформить заказ</a>
+				<button type="button">Продолжить покупки</button>
+			</div>
 			<ul>
 				<li><a>1</a></li>
 				<li><a href="#">2</a></li>
@@ -166,7 +207,7 @@
 		</section>
 
 		<section>
-			<h2>Виды перфораторов</h2>
+			<h2 class="visually-hidden">Виды перфораторов</h2>
 			<dl>
 				<dt>Пара слов о перфораторах</dt>
 				<dd>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</dd>
