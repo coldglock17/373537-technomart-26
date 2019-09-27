@@ -19,6 +19,15 @@ a {
 	background-color: #f3f7f9;
 }
 
+/* Стилизация верхней части хедера */
+.header-top {
+	background-color: #293449;
+}
+
+.header-top a {
+	color: #ffffff;
+}
+
 .logo img {
 	/* Оформление */
 	background-color: #ee3643;
@@ -34,10 +43,7 @@ a {
 	background-color: #ba2732;
 }
 
-.header-top label {
-	color: #ffffff;
-}
-
+/* Стилизация поля поиска */
 .header-top input {
 	/* Типографика */
 	color: #ffffff;
@@ -46,6 +52,34 @@ a {
 	border: none;
 }
 
+/* Стилизация закладки на главной и в каталоге */
+.bookmark:active {
+	background-color: #161d29;
+	opacity: 0.6;
+}
+
+.bookmark:hover, 
+.bookmark:focus {
+	background-color: #212a3a;
+}
+
+/* Стилизация корзины на главной */
+.basket:active {
+	background-color: #161d29;
+	opacity: 0.6;
+}
+
+.basket:hover, 
+.basket:focus {
+	background-color: #212a3a;
+}
+
+/* Стилизация корзины в каталоге */
+.basket-inner {
+	background-color: #ee3643;
+}
+
+/* Стилизация оформления заказа на главной и в каталоге */
 .checkout-button {
 	background-color: #63a63e; 
 }
@@ -56,64 +90,10 @@ a {
 }
 
 .checkout-button:active {
-	color: rgba(255, 255, 255, 0.5);
+	opacity: 0.5;
 }
 
-.purchase-button {
-	background-color: #ee3643;
-}
-
-.site-navigation,
-.user-navigation {
-	list-style: none;
-}
-
-.site-navigation  {
-	/* Типографика */
-	font-size: 17px;
-	line-height: 17px;
-	/* Оформление */
-	background-color: #32425c;
-}
-
-.site-navigation a {
-	color: #ffffff;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-	background-color: #293449;
-}
-
-.site-navigation a:active {
-	color: rgba(255, 255, 255, 0.5);
-}
-
-.user-navigation {
-	font-size: 21px;
-	line-height: 21px;
-}
-
-.user-navigation a {
-	/* Типографика */
-	color: #000000;
-	/* Оформление */
-	background-color: #ffffff;
-}
-
-.user-navigation a:hover,
-.user-navigation a:focus {
-	color: #ee3643;
-}
-
-.user-navigation a:active {
-	color: rgba(0, 0, 0, 0.3);
-}
-
-.visually-hidden {
-	display: none;
-}
-
+/* Стилизация промо-блока */
 article .promo {
 	/* Типографика */
 	font-size: 16px;
@@ -134,6 +114,7 @@ article .find-us {
 	color: #32425c;
 }
 
+/* Стилизация кнопки личного кабинета в каталоге */
 .user-button {
 	font-size: 21px;
 	line-height: 21px;
@@ -146,6 +127,7 @@ article .find-us {
 	opacity: 0.3;
 }
 
+/* Стилизация области пользователя под кнопкой личного кабинета в каталоге */
 .user-area li:first-child {
 	list-style: none;
 }
@@ -171,12 +153,54 @@ article .find-us {
 	opacity: 0.3;
 }
 
-.header-top {
+/* Стилизация области навигации и кнопки входа и регистрации на главной */
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation  {
+	/* Типографика */
+	font-size: 17px;
+	line-height: 17px;
+	/* Оформление */
+	background-color: #32425c;
+}
+
+.site-navigation a {
+	color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
 	background-color: #293449;
 }
 
-.header-top a {
-	color: #ffffff;
+.site-navigation a:active {
+	opacity: 0.5;
+}
+
+/* Стилизация кнопки входа и регистрации на главной */
+.user-navigation {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.user-navigation a {
+	/* Типографика */
+	color: #000000;
+	/* Оформление */
+	background-color: #ffffff;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+	color: #ee3643;
+}
+
+.user-navigation a:active {
+	color: #000000;
+	opacity: 0.3;
 }
 
 .breadcrumbs {
@@ -184,6 +208,7 @@ article .find-us {
 	list-style: none;
 }
 
+/* Стилизация хлебных крошек в каталоге */
 .breadcrumbs a {
 	font-size: 13px;
 	line-height: 18px;
@@ -191,13 +216,15 @@ article .find-us {
 	text-transform: uppercase;
 }
 
-main h1 {
+/* Стилизация главного заголовка в каталоге */
+.main-page h1 {
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
 	text-transform: uppercase;
 }
 
+/* Стилизация бокового фильтра в каталоге */
 .sidebar-filter {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 17px;
@@ -223,6 +250,7 @@ main h1 {
 	text-transform: uppercase;
 }
 
+/* Стилизация верхнего фильтра в каталоге */
 .top-filter {
 	font-family: 'PT Sans', sans-serif;
 }
@@ -234,6 +262,7 @@ main h1 {
 	font-weight: normal;
 }
 
+/* Стилизация критериев в верхнем фильтре в каталоге */
 .sorting-list {
 	list-style: none;
 }
@@ -259,6 +288,7 @@ main h1 {
 	color: #ee3643;
 }
 
+/* Стилизация фильтра по производителям в каталоге */
 .brands-filter {
 	font-family: 'PT Sans', sans-serif;
 }
@@ -273,6 +303,7 @@ main h1 {
 	text-transform: uppercase;
 }
 
+/* Стилизация вариантов выбора в фильтре по производителям в каталоге */
 .filter-area {
 	list-style: none;
 }
@@ -283,15 +314,16 @@ main h1 {
 	text-transform: uppercase;
 }
 
+/* Стилизация кнопки применения в фильтре по производителям в каталоге */
 .apply-button {
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
-	border: 1px solid #e5e5e5;
 
+	border: 1px solid #e5e5e5;
 	background-color: #ffffff;
 }
-
+/* Стилизация секции услуг на главной */
 .services-list {
 	list-style: none;
 }
@@ -326,6 +358,7 @@ main h1 {
 	background-color: #ffc047;
 }
 
+/* Стилизация слайдера на главной */
 figcaption h3 {
 	font-size: 36px;
 	line-height: 36px;
@@ -337,27 +370,7 @@ figcaption p {
 	line-height: 24px;
 }
 
-.btn {
-	/* Типографика */
-	font-size: 14px;
-	line-height: 18px;
-	text-align: center;
-	color: #ffffff;
-	text-transform: uppercase;
-	vertical-align: middle;
-	/* Оформление */
-	background-color: #ee3643;
-}
-
-.btn:hover,
-.btn:focus {
-	background-color: #ca2c37;
-}
-
-.btn:active {
-	background-color: #ba2732;
-}
-
+/* Стилизация заголовков для производителей и товаров на главной */
 .popular-heading {
 	background-color: #f9f5f0;
 }
@@ -371,6 +384,7 @@ figcaption p {
 	font-weight: normal;
 }
 
+/* Стилизация карточек товаров на главной и в каталоге */
 .goods-list {
 	list-style: none;
 	font-family: 'PT Sans', sans-serif;
@@ -401,7 +415,49 @@ figcaption p {
 	line-height: 18px;
 	font-weight: bold;
 }
+/* Стилизация кнопки покупки, появляющаяся при наведении на карточку товара в каталоге */
+.buy-button {
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
 
+	background-color: #63a63e;
+	border: none;
+	box-shadow: inset 0 -3px 0 0 #367315;
+}
+
+.buy-button:hover,
+.buy-button:focus {
+	background-color: #5fbb2d;
+}
+
+.buy-button:active {
+	background-color: #518534;
+	box-shadow: none;
+}
+
+/* Стилизация кнопки "в закладки", появляющаяся при наведении на карточку товара в каталоге*/
+.bookmark-button {
+	font-size: 14px;
+	line-height: 18px;
+	color: #32425c;
+
+	border: none;
+	background-color: #ffffff;
+	box-shadow: 0 0 0 3px #63a63e;
+}
+
+.bookmark-button:hover,
+.bookmark-button:focus {
+	box-shadow: 0 0 0 3px #32425c;
+}
+
+.bookmark-button:active {
+	opacity: 0.3;
+	box-shadow: 0 0 0 3px #32425c;
+}
+
+/* Стилизация номеров страниц каталога */
 .page-list {
 	list-style: none;
 }
@@ -429,66 +485,7 @@ figcaption p {
 	border: 1px solid #ee3643;
 }
 
-.buy-button {
-	font-size: 14px;
-	line-height: 18px;
-	color: #ffffff;
-
-	background-color: #63a63e;
-	border: none;
-	box-shadow: inset 0 -3px 0 0 #367315;
-}
-
-.buy-button:hover,
-.buy-button:focus {
-	background-color: #5fbb2d;
-}
-
-.buy-button:active {
-	background-color: #518534;
-	box-shadow: none;
-}
-
-.bookmark:active {
-	background-color: #161d29;
-	opacity: 0.6;
-}
-
-.bookmark:hover, 
-.bookmark:focus {
-	background-color: #212a3a;
-}
-
-.basket:active {
-	background-color: #161d29;
-	opacity: 0.6;
-}
-
-.basket:hover, 
-.basket:focus {
-	background-color: #212a3a;
-}
-
-.bookmark-button {
-	font-size: 14px;
-	line-height: 18px;
-	color: #32425c;
-
-	border: none;
-	background-color: #ffffff;
-	box-shadow: 0 0 0 3px #63a63e;
-}
-
-.bookmark-button:hover,
-.bookmark-button:focus {
-	box-shadow: 0 0 0 3px #32425c;
-}
-
-.bookmark-button:active {
-	opacity: 0.3;
-	box-shadow: 0 0 0 3px #32425c;
-}
-
+/* Стилизация раздела "виды перфораторов" в каталоге */
 .drills-type dt {
 	font-size: 30px;
 	line-height: 30px;
@@ -501,6 +498,7 @@ figcaption p {
 	line-height: 24px;
 }
 
+/* Стилизация раздела "популярные производители" на главной */
 .brands-list {
 	list-style: none;
 }
@@ -517,6 +515,7 @@ figcaption p {
 	opacity: 0.3;
 }
 
+/* Стилизация раздела с информацией об услугах на главной */
 .info {
 	background-color: #f4f8f9;
 }
@@ -551,8 +550,6 @@ figcaption p {
 	font-weight: normal;
 }
 
-
-
 .info p {
 	font-size: 13px;
 	line-height: 24px;
@@ -565,6 +562,7 @@ figcaption p {
 	font-weight: normal;
 }
 
+/* Стилизация контейнера с информацией о доставке, кредите и гарантиях на главной */
 .info-delivery h3 {
 	font-size: 36px;
 	line-height: 36px;
@@ -576,6 +574,7 @@ figcaption p {
 	line-height: 24px;
 }
 
+/* Стилизация раздела "о компании" на главной */
 .about h2 {
 	font-size: 30px;
 	line-height: 30px;
@@ -601,12 +600,14 @@ figcaption p {
 	font-weight: normal;
 }
 
+/* Стилизация раздела контактов на главной */
 .contacts p {
 	font-size: 13px;
 	line-height: 24px;
 	font-family: 'PT Sans', sans-serif;
 }
 
+/* Стилизация футера на главной и в каталоге */
 .footer-top {
 	background-color: #32425c;
 }
@@ -691,6 +692,7 @@ figcaption p {
 	text-decoration: none;
 }
 
+/* Стилизация соцсетей в футере */
 .footer-social {
 	text-align: center;
 }
@@ -703,4 +705,31 @@ figcaption p {
 .footer-social a:focus,
 .footer-social a:active {
 	background-color: #ee3643;
+}
+
+/* Общий класс для скрытия контента */
+.visually-hidden {
+	display: none;
+}
+
+/* Общие стили для кнопок */
+.btn {
+	/* Типографика */
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	vertical-align: middle;
+	/* Оформление */
+	background-color: #ee3643;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: #ca2c37;
+}
+
+.btn:active {
+	background-color: #ba2732;
 }
