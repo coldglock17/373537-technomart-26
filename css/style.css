@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: 'Cuprum', sans-serif;
+	font-family: 'Cuprum', 'Arial', sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
@@ -204,7 +204,7 @@ article .find-us {
 }
 
 .breadcrumbs {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 	list-style: none;
 }
 
@@ -226,7 +226,7 @@ article .find-us {
 
 /* Стилизация бокового фильтра в каталоге */
 .sidebar-filter {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 }
@@ -252,7 +252,7 @@ article .find-us {
 
 /* Стилизация верхнего фильтра в каталоге */
 .top-filter {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .top-filter h2 {
@@ -290,7 +290,7 @@ article .find-us {
 
 /* Стилизация фильтра по производителям в каталоге */
 .brands-filter {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .brands-filter fieldset {
@@ -387,7 +387,7 @@ figcaption p {
 /* Стилизация карточек товаров на главной и в каталоге */
 .goods-list {
 	list-style: none;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .goods-item {
@@ -463,7 +463,7 @@ figcaption p {
 }
 
 .page-list a {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 	font-size: 15px;
 	line-height: 18px;
 	color: #000000;
@@ -493,7 +493,7 @@ figcaption p {
 }
 
 .drills-type dd {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
@@ -553,7 +553,7 @@ figcaption p {
 .info p {
 	font-size: 13px;
 	line-height: 24px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .info h3 {
@@ -585,7 +585,7 @@ figcaption p {
 .about p {
 	font-size: 13px;
 	line-height: 24px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .about-list li {
@@ -604,7 +604,7 @@ figcaption p {
 .contacts p {
 	font-size: 13px;
 	line-height: 24px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 /* Стилизация футера на главной и в каталоге */
