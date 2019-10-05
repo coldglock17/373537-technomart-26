@@ -11,6 +11,17 @@ a {
 	text-decoration: none;
 }
 
+/* Блок-центровщик */
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/* Флекс-контейнер */
+.flex-container {
+	display: flex;
+}
+
 .main-header {
 	/* Типографика */
 	font-size: 17px;
@@ -19,19 +30,33 @@ a {
 	background-color: #f3f7f9;
 }
 
-/* Стилизация верхней части хедера */
+/* Стилизация верхней части хедера на главной и в каталоге */
 .header-top {
 	background-color: #293449;
+
+	min-height: 42px;
+	margin-bottom: 46px;
+
+	display: flex;
 }
 
 .header-top a {
 	color: #ffffff;
 }
 
+/* Стилизация логотипа */
 .logo img {
 	/* Оформление */
+	width: 108px;
+	height: 18px;
+}
+
+.logo {
 	background-color: #ee3643;
 	border-bottom: 5px solid #b52933;
+
+	width: 220px;
+	height: 42px;	
 }
 
 .logo:hover,
@@ -43,7 +68,7 @@ a {
 	background-color: #ba2732;
 }
 
-/* Стилизация поля поиска */
+/* Стилизация поля поиска на главной и в каталоге */
 .header-top input {
 	/* Типографика */
 	color: #ffffff;
@@ -93,8 +118,8 @@ a {
 	opacity: 0.5;
 }
 
-/* Стилизация промо-блока */
-article .promo {
+/* Стилизация промо-блока на главной и в каталоге */
+.promo {
 	/* Типографика */
 	font-size: 16px;
 	line-height: 23px;
@@ -102,13 +127,13 @@ article .promo {
 	color: #ee3643;
 }
 
-article .call-us {
+.call-us {
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;
 }
 
-article .find-us {
+.find-us {
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
@@ -128,8 +153,14 @@ article .find-us {
 }
 
 /* Стилизация области пользователя под кнопкой личного кабинета в каталоге */
+.user-area {
+	display: flex;
+}
+
 .user-area li:first-child {
 	list-style: none;
+
+	margin-right: 31px;
 }
 
 .user-area li {
@@ -165,10 +196,18 @@ article .find-us {
 	line-height: 17px;
 	/* Оформление */
 	background-color: #32425c;
+	border-bottom: 5px solid #293449;
+	
+	min-height: 55px;
+
+	display: flex;
+	align-items: center;
 }
 
 .site-navigation a {
 	color: #ffffff;
+
+	margin-right: 61px;
 }
 
 .site-navigation a:hover,
@@ -184,6 +223,8 @@ article .find-us {
 .user-navigation {
 	font-size: 21px;
 	line-height: 21px;
+
+	display: flex;
 }
 
 .user-navigation a {
@@ -203,17 +244,21 @@ article .find-us {
 	opacity: 0.3;
 }
 
+/* Стилизация хлебных крошек в каталоге */
 .breadcrumbs {
 	font-family: 'PT Sans', 'Arial', sans-serif;
 	list-style: none;
+
+	display: flex;
 }
 
-/* Стилизация хлебных крошек в каталоге */
 .breadcrumbs a {
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
 	text-transform: uppercase;
+
+	margin-right: 43px;
 }
 
 /* Стилизация главного заголовка в каталоге */
@@ -253,6 +298,12 @@ article .find-us {
 /* Стилизация верхнего фильтра в каталоге */
 .top-filter {
 	font-family: 'PT Sans', 'Arial', sans-serif;
+
+	display: flex;
+
+	background-color: #f7f3ec;
+
+	min-height: 35px;
 }
 
 .top-filter h2 {
@@ -265,6 +316,8 @@ article .find-us {
 /* Стилизация критериев в верхнем фильтре в каталоге */
 .sorting-list {
 	list-style: none;
+
+	display: flex;
 }
 
 .sorting-list a {
@@ -275,6 +328,8 @@ article .find-us {
 	
 	border-bottom: 1px dotted #ee3643;
 	opacity: 0.3;
+
+	margin-right: 71px;
 }
 
 .sorting-list a:hover,
@@ -306,6 +361,9 @@ article .find-us {
 /* Стилизация вариантов выбора в фильтре по производителям в каталоге */
 .filter-area {
 	list-style: none;
+
+	display: flex;
+	flex-direction: column;
 }
 
 .filter-area li {
@@ -323,9 +381,31 @@ article .find-us {
 	border: 1px solid #e5e5e5;
 	background-color: #ffffff;
 }
+
 /* Стилизация секции услуг на главной */
 .services-list {
 	list-style: none;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+
+	padding: 0;
+}
+
+.services-list::after {
+	content: "";
+	order: 0;
+	width: 100%;
+	height: 0;
+}
+
+.services-item {
+	width: 300px;
+	min-height: 123px;
+
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 .services-item a {
@@ -348,14 +428,18 @@ article .find-us {
 
 .services-item:nth-child(3) {
 	background-color: #dc91d8;
+	margin-right: 0;
 }
 
 .services-item:nth-child(4) {
 	background-color: #8ed78f;
+	margin-right: 0;
 }
 
 .services-item:last-child {
 	background-color: #ffc047;
+	margin-right: 0;
+	order: 1;
 }
 
 /* Стилизация слайдера на главной */
@@ -370,9 +454,15 @@ figcaption p {
 	line-height: 24px;
 }
 
+figure {
+	margin: -300px 0 0 0;
+}
+
 /* Стилизация заголовков для производителей и товаров на главной */
 .popular-heading {
 	background-color: #f9f5f0;
+
+	display: flex;
 }
 
 .popular-heading h2 {
@@ -384,15 +474,55 @@ figcaption p {
 	font-weight: normal;
 }
 
+.popular-heading a {
+	align-self: center;
+}
+
+.popular-button {
+	width: 253px;
+	min-height: 38px;
+
+	margin-left: auto;
+	margin-right: 24px;
+}
+
 /* Стилизация карточек товаров на главной и в каталоге */
 .goods-list {
 	list-style: none;
 	font-family: 'PT Sans', 'Arial', sans-serif;
+
+	width: 700px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	padding: 0;
 }
 
 .goods-item {
 	border: 1px solid #eaeaea;
+
+	margin-right: 20px;
+	width: 218px;
+	min-height: 316px;
 }
+
+.goods-index {
+	width: 940px;
+}
+
+.goods-index .goods-item:last-child {
+	margin-right: 0;
+}
+
+.goods-catalog .goods-item {
+	margin-bottom: 20px;
+}
+
+.goods-catalog .goods-item:nth-child(3n) {
+	margin-right: 0;
+}
+
 .goods-item a {
 	color: #000000;
 }
@@ -415,6 +545,22 @@ figcaption p {
 	line-height: 18px;
 	font-weight: bold;
 }
+
+/* Появление при наведении на карточку товара скрытого блока с кнопками */
+.goods-hide {
+	display: none;
+}
+
+.goods-card:hover .goods-reveal,
+.goods-card:focus .goods-reveal {
+	display: none;
+}
+
+.goods-card:hover .goods-hide,
+.goods-card:focus .goods-hide {
+	display: block;
+}
+
 /* Стилизация кнопки покупки, появляющаяся при наведении на карточку товара в каталоге */
 .buy-button {
 	font-size: 14px;
@@ -436,7 +582,7 @@ figcaption p {
 	box-shadow: none;
 }
 
-/* Стилизация кнопки "в закладки", появляющаяся при наведении на карточку товара в каталоге*/
+/* Стилизация кнопки "в закладки", появляющаяся при наведении на карточку товара в каталоге */
 .bookmark-button {
 	font-size: 14px;
 	line-height: 18px;
@@ -460,6 +606,13 @@ figcaption p {
 /* Стилизация номеров страниц каталога */
 .page-list {
 	list-style: none;
+
+	display: flex;
+	align-items: center;
+}
+
+.page-list li {
+	margin-right: 10px;
 }
 
 .page-list a {
@@ -469,6 +622,10 @@ figcaption p {
 	color: #000000;
 
 	border: 1px solid #e5e5e5;
+
+	display: block;
+
+	padding: 8px 13px;
 }
 
 .page-list .current-page {
@@ -501,10 +658,28 @@ figcaption p {
 /* Стилизация раздела "популярные производители" на главной */
 .brands-list {
 	list-style: none;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: space-between;
+
+	padding: 0;
+}
+
+.brands-item a {
+	width: 218px;
+	min-height: 143px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .brands-item {
 	border: 1px solid #eaeaea;
+
+	margin-bottom: 20px;
 }
 
 .brands-item:hover {
@@ -515,13 +690,21 @@ figcaption p {
 	opacity: 0.3;
 }
 
+.brands-item:nth-child(4n) {
+	margin-right: 0;
+}
+
 /* Стилизация раздела с информацией об услугах на главной */
 .info {
 	background-color: #f4f8f9;
+
 }
 
 .info-list {
 	list-style: none;
+
+	display: flex;
+	flex-direction: column;
 }
 
 .info-list a {
@@ -612,14 +795,27 @@ figcaption p {
 	background-color: #32425c;
 }
 
+.footer-column {
+	display: flex;
+	flex-direction: column;
+}
+
 .footer-menu {
 	font-size: 18px;
 	line-height: 24px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-menu li {
+	margin-right: 60px;
 }
 
 .footer-top .menu-top,
 .footer-top .menu-bottom {
 	list-style: none;
+	display: flex;
 }
 
 .menu-top a {
@@ -692,7 +888,7 @@ figcaption p {
 	text-decoration: none;
 }
 
-/* Стилизация соцсетей в футере */
+/* Стилизация соцсетей в футере на главной и в каталоге */
 .footer-social {
 	text-align: center;
 }
