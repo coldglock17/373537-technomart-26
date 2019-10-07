@@ -22,6 +22,10 @@ a {
 	display: flex;
 }
 
+.flex-column {
+	flex-direction: column;
+}
+
 .main-header {
 	/* Типографика */
 	font-size: 17px;
@@ -42,6 +46,10 @@ a {
 
 .header-top a {
 	color: #ffffff;
+}
+
+.header-alignment {
+	justify-content: center;
 }
 
 /* Стилизация логотипа */
@@ -276,6 +284,10 @@ a {
 	line-height: 18px;
 }
 
+.flex-column {
+	flex-direction: column;
+}
+
 .sidebar-filter h2 {
 	font-size: 13px;
 	line-height: 18px;	
@@ -497,6 +509,8 @@ figure {
 	flex-wrap: wrap;
 
 	padding: 0;
+
+	
 }
 
 .goods-item {
