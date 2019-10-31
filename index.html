@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Техномарт</title>
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
@@ -14,24 +14,20 @@
 				<a href="index.html" class="logo">
 					<img src="img/logo.svg" width="109" height="18" alt="Логотип Техномарт" class="logo-header">
 				</a>
-				<p>
-					<form action="https://echo.htmlacademy.ru" method="get" class="search-form">
-						<label for="search-field" class="visually-hidden">Поиск:</label>
-						<input type="search" name="search" id="search-field" placeholder="Поиск:">
-						<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" class="search"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
-					</form>
-				</p>
-				<div>
-					<a href="#" class="bookmark">
-						Закладки: 0
-					</a>
-					<a href="#" class="basket">
-						Корзина: 0
-					</a>
-					<a href="#" class="checkout-button">
-						Оформить заказ
-					</a>
-				</div>
+				<form action="https://echo.htmlacademy.ru" method="get" class="search-form">
+					<label for="search-field"><span class="visually-hidden">Поиск:</span></label>
+					<input type="search" name="search" id="search-field" placeholder="Поиск:">
+					<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" class="search"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+				</form>
+				<a href="#" class="bookmark">
+					Закладки: 0
+				</a>
+				<a href="#" class="basket">
+					Корзина: 0
+				</a>
+				<a href="#" class="checkout-button">
+					Оформить заказ
+				</a>
 			</div>
 		</div>
 
@@ -48,19 +44,20 @@
 			</div>
 
 			<section>
+				<h2 class="visually-hidden">Регистрация или Вход</h2>
 				<ul class="user-navigation">
 					<li class="login-btn">
-						<a href="#" class="user-btn login">Войти</a>
+						<a href="#" class="login">Войти</a>
 						<svg xmlns="http://www.w3.org/2000/svg" class="login-icon" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
 					</li>
 					<li>
-						<a href="#" class="user-btn sign-up">Регистрация</a>
+						<a href="#" class="sign-up">Регистрация</a>
 					</li>
 				</ul>
 			</section>
 		</div>
 
-		<nav class="container">
+		<nav class="container site-nav">
 			<ul class="site-navigation">
 				<li class="navigation-item"><a href="index.html#begin" class="navigation-link">Главная</a></li>
 				<li class="navigation-item"><a href="index.html#about" class="navigation-link">Компания</a></li>
@@ -124,11 +121,11 @@
 							<h3>Дрели</h3>
 							<p>Соседям на радость!</p>
 						</figcaption>
-						<img src="img/drill-master-1.jpg" wdith="620" height="266" alt="Дрелли. Соседям на радость!">
+						<img src="img/drill-master-1.jpg" width="620" height="266" alt="Дрелли. Соседям на радость!">
 						<a href="catalog.html" class="btn open-btn">Открыть каталог</a>
 						<div class="arrows test-1">
-							<button type="button"><label for="control-1" class="arrow-back"><span class="visually-hidden">Назад</span></label></button>
-							<button type="button"><label for="control-2" class="arrow-next"><span class="visually-hidden">Вперед</span></label></button>
+							<label for="control-1" class="arrow-back"><span class="visually-hidden">Назад</span></label>
+							<label for="control-2" class="arrow-next"><span class="visually-hidden">Вперед</span></label>
 						</div>
 					</figure>
 					<figure id="slider-2" class="slider-item">
@@ -136,11 +133,11 @@
 							<h3>Перфораторы</h3>
 							<p>Настоящие мужские игрушки</p>
 						</figcaption>
-						<img src="img/drill-master-2.jpg" wdith="620" height="266" alt="Дрелли. Соседям на радость!">
+						<img src="img/drill-master-2.jpg" width="620" height="266" alt="Дрелли. Соседям на радость!">
 						<a href="catalog.html" class="btn open-btn">Открыть каталог</a>
 						<div class="arrows test-2">
-							<button type="button"><label for="control-1" class="arrow-back"><span class="visually-hidden">Назад</span></label></button>
-							<button type="button"><label for="control-2" class="arrow-next"><span class="visually-hidden">Вперед</span></label></button>
+							<label for="control-1" class="arrow-back"><span class="visually-hidden">Назад</span></label>
+							<label for="control-2" class="arrow-next"><span class="visually-hidden">Вперед</span></label>
 						</div>
 					</figure>
 				</div>
@@ -246,9 +243,9 @@
 					<input type="radio" name="service-radio" id="guarantee" class="visually-hidden">
 					<input type="radio" name="service-radio" id="credit" class="visually-hidden">
 					<div class="info-list">
-						<label for="delivery" class="info-item">Доставка</label></li>
-						<label for="guarantee" class="info-item">Гарантия</label></li>
-						<label for="credit" class="info-item">Кредит</label></li>
+						<label for="delivery" class="info-item">Доставка</label>
+						<label for="guarantee" class="info-item">Гарантия</label>
+						<label for="credit" class="info-item">Кредит</label>
 					</div>
 					<div class="service-slide info-delivery flex-container">
 						<div>
@@ -289,7 +286,7 @@
 				<section class="contacts">
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, <br> заехав в наш офис:</p>
-					<a href="#">
+					<a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.323055%2C59.938631&mode=search&oid=1284388067&ol=biz&z=15">
 						<img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 					</a>
 					<button type="button" class="btn write-us">Заблудились? Напишите нам!</button>
@@ -301,7 +298,6 @@
 
 	<footer class="main-footer">
 		<div class="modal-cart visually-hidden">
-			<button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
 			<div class="modal-top">
 				<p>Товар добавлен в корзину!</p>
 			</div>
@@ -311,7 +307,7 @@
 			</div>
 		</div>
 
-		<div class="pop-up visually-hidden">
+		<div class="pop-up">
 			<form action="https://echo.htmlacademy.ru" method="post" class="modal-form">
 				<button type="button" class="form-close"><span class="visually-hidden">Закрыть</span></button>
 				<div class="flex-container">
@@ -327,10 +323,18 @@
 				<label for="comment-field" class="area-label">Текст письма:</label>
 				<textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
 				<div class="modal-btn">
-					<button type="submit" class="btn" class="submit-form">Отправить</button>
+					<button type="submit" class="btn">Отправить</button>
 				</div>
 			</form>
 		</div>
+
+		<section class="modal-map visually-hidden">
+			<h2 class="visually-hidden">Как до нас добраться</h2>
+			<p><img src="img/map-popup.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+			<button class="map-close" type="button">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+		</section>
 
 		<div class="footer-top">
 			<div class="container">
