@@ -2309,6 +2309,12 @@ a.price-new {
 	font-weight: bold;
 }
 
+.service-frame input:nth-of-type(1):focus ~ .info-list label[for="delivery"],
+.service-frame input:nth-of-type(2):focus ~ .info-list label[for="guarantee"],
+.service-frame input:nth-of-type(3):focus ~ .info-list label[for="credit"] {
+outline: 2px solid #90bafe;
+}
+
 .info h2 {
 	font-size: 30px;
 	line-height: 30px;
