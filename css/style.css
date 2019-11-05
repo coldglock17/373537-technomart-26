@@ -3162,6 +3162,22 @@ outline: 2px solid #90bafe;
 }
 
 /* Модальное окно карты */
+.modal-map iframe {
+  position: relative;
+  z-index: 310;
+
+  border: none;
+}
+
+.modal-map p {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  margin: 0;
+}
+
 .modal-map {
 	
 	bottom: 380px;
@@ -3182,10 +3198,6 @@ outline: 2px solid #90bafe;
 	z-index: 300;
 }
 
-.modal-map p {
-	margin: 0;
-}
-
 .map-close {
 	border: none;
 
@@ -3196,6 +3208,8 @@ outline: 2px solid #90bafe;
 	position: relative;
 
 	outline: none;
+
+	z-index: 320;
 }
 
 .map-close::after {
