@@ -5,13 +5,13 @@
 	<title>Техномарт</title>
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
 		<div class="header-top">
 			<div class="container header-alignment">
-				<a href="#" class="logo">
+				<a class="logo">
 					<img src="img/logo.svg" width="109" height="18" alt="Логотип Техномарт" class="logo-header">
 				</a>
 				<form action="https://echo.htmlacademy.ru" method="get" class="search-form">
@@ -300,7 +300,7 @@
 				<section class="contacts">
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-					<a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.323055%2C59.938631&mode=search&oid=1284388067&ol=biz&z=15">
+					<a href="#" class="map-open">
 						<img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 					</a>
 					<button type="button" class="btn write-us">Заблудились? Напишите нам!</button>
@@ -321,7 +321,7 @@
 					</p>
 					<p>
 						<label for="email-field">Ваш e-mail: <br></label>
-						<input type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on">
+						<input type="email" name="email" id="email-field" placeholder="email@example.com">
 					</p>
 				</div>
 				<label for="comment-field" class="area-label">Текст письма:</label>
@@ -401,5 +401,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/form.js"></script>
 </body>
 </html>
